@@ -4,6 +4,7 @@
 * Methodology
 * Experiment
 * Results
+* Conclusion
 * References 
 
 
@@ -182,4 +183,13 @@ MSE: Like the MNIST dataset, the MSE slowly declines as k rises. The slower rate
 
 ![CIFAR](https://github.com/user-attachments/assets/950c167c-ef48-40ae-949a-43b76d7ef9fd)
 
+## Conclusion
 
+On the MNIST and CIFAR-10 datasets, the SVD-based image denoising method has demonstrated efficacy in lowering noise and maintaining picture details. The selection of the k parameter, which regulates the number of singular values preserved during reconstruction, affects the technique's performance.
+A lower k value can greatly enhance image quality for both datasets. However, the marginal performance improvement decreases as k rises. This implies that computing complexity and noise reduction need to be carefully balanced.
+Even though the SVD-based method works well, more investigation is required to maximize the k selection procedure. The effectiveness of this methodology could be further improved by adaptive techniques that can automatically identify the ideal k value for various images and noise levels.
+
+## References
+Mean square error. Mean Square Error - an overview | ScienceDirect Topics. (n.d.). https://www.sciencedirect.com/topics/engineering/mean-square-error 
+
+NATIONAL INSTRUMENTS CORP. (n.d.). Peak signal-to-noise ratio as an image quality metric. NI. https://www.ni.com/en/shop/data-acquisition-and-control/add-ons-for-data-acquisition-and-control/what-is-vision-development-module/peak-signal-to-noise-ratio-as-an-image-quality-metric.html 
